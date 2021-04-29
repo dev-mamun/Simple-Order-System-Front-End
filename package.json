@@ -1,0 +1,24 @@
+{
+  "name": "simple-order-system-fron-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-mamun/Simple-Order-System-Front-End.git"
+  },
+  "author": "Md.abdullah al mamun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev-mamun/Simple-Order-System-Front-End/issues"
+  },
+  "homepage": "https://github.com/dev-mamun/Simple-Order-System-Front-End#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "parsleyjs": "^2.9.2"
+  }
+}
