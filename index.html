@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Order System</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="css/apps.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/parsleyjs/dist/parsley.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/toastr/build/toastr.min.js"></script>
+    <script defer src="js/storage.js"></script>
+    <script defer src="js/helper.js"></script>
+    <script defer src="js/apps.js"></script>
+</head>
+<body>
+<div class="container-lg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item d-none">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item d-none">
+                        <a class="nav-link" href="orders.html">Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div id="items" class="row">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var $apps = new Apps();
+        $apps.items();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="css/apps.css">
+    <link rel="stylesheet" href="css/signin.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/parsleyjs/dist/parsley.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/toastr/build/toastr.min.js"></script>
+    <script defer src="js/storage.js"></script>
+    <script defer src="js/helper.js"></script>
+    <script defer src="js/apps.js"></script>
+</head>
+<body class="text-center">
+
+<form class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="username" class="sr-only">Username</label>
+    <input type="text" name="username" id="username" class="form-control" placeholder="Username" required="" autofocus="">
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
+    <button class="btn btn-lg btn-primary btn-block btn-login" type="submit">Sign in</button>
+</form>
+
+<script>
+    $(function () {
+        var $apps = new Apps();
+        $apps.login();
+    });
+</script>
+</body>
+</html>

@@ -19,6 +19,8 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
-    "parsleyjs": "^2.9.2"
+    "moment": "^2.29.1",
+    "parsleyjs": "^2.9.2",
+    "toastr": "^2.1.4"
   }
 }
